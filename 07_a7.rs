@@ -6,8 +6,8 @@ enum Color {
     Yellow,
     Green,
 }
-fn print_color(go: Color) {
-    match go {
+fn print_color(my_color: Color) {
+    match my_color {
         Color::White => println!("White color"),
         Color::Red => println!("Red color"),
         Color::Blue => println!("Blue color"),
