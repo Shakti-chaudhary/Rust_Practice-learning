@@ -1,3 +1,5 @@
+// copy all the code to main.rs in src/  to run tests
+
 fn all_caps(world: &str) -> String {
     world.to_uppercase()
 }
