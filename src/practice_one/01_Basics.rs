@@ -108,16 +108,19 @@ fn main() {
     // print_phase(&phrase);
     // println!("{}", phrase);
 
-    println!("{}", gcd(20, 5));
+    // println!("{}", gcd(20, 5));
+
+    // ======================================
+    //? Control flow
 }
-fn gcd(mut a: u64, mut b: u64) -> u64 {
-    while a != 0 {
-        if a < b {
-            let c = a;
-            a = b;
-            b = c;
-        }
-        a = a % b;
-    }
-    b
-}
+// fn gcd(mut a: u64, mut b: u64) -> u64 {
+//     while a != 0 {
+//         if a < b {
+//             let c = a;
+//             a = b;
+//             b = c;
+//         }
+//         a = a % b;
+//     }
+//     b
+// }
