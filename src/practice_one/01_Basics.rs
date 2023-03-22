@@ -67,23 +67,57 @@ fn main() {
     // ==========================================
     //? String and &Str
 
-    let name = String::from("Tyler");
-    let course = "Rust".to_string();
-    let new_name = name.replace("Tyler", "Tylr");
+    // let name = String::from("Tyler");
+    // let course = "Rust".to_string();
+    // let new_name = name.replace("Tyler", "Tylr");
 
-    println!("{}", name);
-    println!("{}", course);
-    println!("{}", new_name);
+    // println!("{}", name);
+    // println!("{}", course);
+    // println!("{}", new_name);
 
-    // &str = "String slices" or "stir"
-    let str1 = "hello "; // str
-    let str2 = str1.to_string();
-    let str3 = &str2;
+    // // &str = "String slices" or "stir"
+    // let str1 = "hello "; // str
+    // let str2 = str1.to_string();
+    // let str3 = &str2;
 
-    println!("{}", str1);
-    println!("{}", str2);
-    println!("{}", str3);
+    // println!("{}", str1);
+    // println!("{}", str2);
+    // println!("{}", str3);
 
-    // compare string == != (does not equal)
-    println!("{}", "ONE".to_lowercase() == "one");
+    // // compare string == != (does not equal)
+    // println!("{}", "ONE".to_lowercase() == "one");
+
+    // =========================================
+    //? Strings literals
+
+    // let rust = "\x52\x75\x73\x74";
+    // println!("{}", rust);
+
+    // =========================================
+    //? Functions
+
+    // fn print_phase() {
+    //     println!("{}", "Function called.");
+    // }
+    // print_phase();
+
+    // let phrase = "hello world!";
+    // fn print_phase(world: &str) {
+    //     println!("{}", world);
+    // }
+    // print_phase(&phrase);
+    // println!("{}", phrase);
+
+    println!("{}", gcd(20, 5));
+}
+fn gcd(mut a: u64, mut b: u64) -> u64 {
+    while a != 0 {
+        if a < b {
+            let c = a;
+            a = b;
+            b = c;
+        }
+        a = a % b;
+    }
+    b
 }
